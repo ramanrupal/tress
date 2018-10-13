@@ -47,5 +47,7 @@ int main(int argc,char *argv[])
         insertion(root,'r');
         cout<<"\n";
         printLevelorder(root);
+	int h=height(root);
+	cout<<"height of tree is =="<<h;
 }
 
