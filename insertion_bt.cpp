@@ -29,19 +29,19 @@ void insertion(node *root,char data)
 			q1.push(temp->left);
 	}
 }
+
 int main(int argc,char *argv[])
 {
 	struct node *root=new node;
 	int size=argc-1;
 	char a[size];
-	int k=0;
-	/*for(int i=1;i<=size;i++)
+	for(int i=0;i<size;i++)
 	{
-		a[k]=*(a[i]);
-		k++;
-	}*/
-        for(int i=0;i<7;i++)
-        cin>>a[i];
+		a[i]=(argv[i+1]);
+		
+	}
+        /*for(int i=0;i<7;i++)
+        cin>>a[i];*/
         construct(root,a,0);
 	printLevelorder(root);
         insertion(root,'r');
