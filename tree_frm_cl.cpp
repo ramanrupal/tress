@@ -33,19 +33,16 @@ int main(int argc,char *argv[])
 	 struct node *root=new node;
          int size=argc-1;
 	 char a[size];
-	 int k=0;
-	 /*for(int i=1;i<=size;i++)
+	 for(int i=0;i<size;i++)
 	 {
-		 a[k]=atoi(argv[i]);
-		 k++;
-	 }*/
-         for(int i=0;i<7;i++)
-{
-cin>>a[i];
-}
+		 a[i]=(argv[i+1]);
+		 
+	 }
 	 insert_node(root,a,0);
          printLevelorder(root);
          printPostorder(root);
+	int h=height(root);
+	cout<<"Height of tree is="<<h;
 }
 
 
